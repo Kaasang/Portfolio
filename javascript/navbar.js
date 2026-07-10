@@ -10,6 +10,9 @@ window.addEventListener("scroll",() =>{
 
 const menuBtn = document.querySelector(".menu-btn");
 const navlinks = document.querySelector(".nav-links");
-menuBtn.addEventListener("click", () => {
-    navlinks.classList.toggle("active");
-});
+
+if (menuBtn && navlinks) {
+    menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("active");
+    });
+}
